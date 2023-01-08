@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Japanese Learner</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+
+<body>
+    <main>
+        <h1>Japanese Writing Aid</h1>
+        <section id="instructions">
+            <p>A <i>Romanji</i> word will be displayed. Write the corresponding word in Japanese characters on paper.</p>
+        </section>
+        <section id="content">
+            <p id="main-display">Press start!</p>
+        </section>
+        <section id="functions">
+            <button id="start" onclick="getNext();">Start</button>
+            <div id="answer">
+                <button id="show" class="disabled" onclick="show();">Show Answer</button>
+                <div id="floater" class="">
+                    <div id="triangle"></div>
+                    <p id="answer-display">123</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Created by
+        <a href="http://www.facebook.com/sangdang.19">Sang Dang</a>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

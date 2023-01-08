@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+main {
+    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    padding: 30px;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.511), -3px -5px 10px rgba(255, 255, 255, 0.577);
+    position: relative;
+    max-width: 500px;
+    height: 250px;
+}
+
+main h1 {
+    font-size: 1.3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main #instructions {
+    font-size: .8rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+main #content {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+main #functions {
+    display: flex;
+    place-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+#show,
+#start {
+    width: 100%;
+    border-radius: .2rem;
+    padding: 5px 0;
+    font-size: .8rem;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.577);
+    border-color: gray;
+    border-bottom-width: 5px;
+    transition: all 0.2s ease-in-out;
+    border-radius: .5rem;
+}
+
+#answer {
+    position: relative;
+}
+
+#functions button:hover {
+    border-color: purple;
+    border-bottom-color: purple;
+}
+
+#functions button:active {
+    border-bottom-width: 1px;
+}
+
+#show.disabled {
+    color: gray;
+    background-color: transparent;
+}
+
+#floater {
+    width: 5rem;
+    height: 3rem;
+    background-color: white;
+    position: absolute;
+    bottom: -120%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    place-content: center;
+    place-items: center;
+    font-size: .8rem;
+    border-radius: .5rem;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+#triangle {
+    width: 0;
+    height: 0;
+    border-bottom: 15px solid white;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#floater.active {
+    opacity: 1;
+}
+
+footer {
+    position: fixed;
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+}
