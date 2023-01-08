@@ -7,13 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
+
+    <style>
+        footer {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        footer span {
+            background-color: white;
+            padding: 7px 12px;
+            border-radius: 25px;
+            transition: all 0.2s linear;
+            border: 2px solid white;
+        }
+
+        footer span a {
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
+
+        footer span:hover {
+            background-color: transparent;
+        }
+    </style>
 </head>
 
 <body>
     <main>
         <h1>Japanese Writing Aid</h1>
         <section id="instructions">
-            <p>A <i>Romanji</i> word will be displayed. Write the corresponding word in Japanese characters on paper.</p>
+            <p>A <i>Romanji</i> word will be displayed. Write the corresponding word in Japanese characters on paper.
+            </p>
         </section>
         <section id="content">
             <p id="main-display">Press start!</p>
@@ -31,7 +59,8 @@
     </main>
     <footer>
         Created by
-        <a href="http://www.facebook.com/sangdang.19">Sang Dang</a>
+        <a href="http://www.github.com/Sang-Dang" target="_blank">Sang Dang</a>. <span><a
+                href="https://github.com/Sang-Dang/japanese-alphabet-writing-aid" target="_blank">View code</a> </span>
     </footer>
     <script src="js/script.js"></script>
 </body>
